@@ -61,7 +61,7 @@ const handleSearchChange = (evento: any) => {
         <div>minimum two letters</div>
         <input
           type="text"
-          placeholder="Seacrh.."
+          placeholder="Search.."
           value={search}
           onChange={handleSearchChange}
         />
