@@ -11,7 +11,7 @@ let squareNumbers = numberObservable.pipe(
 );
 
 // primer tipado 'props', segundo tipado 'state'
-class CopyNewComponent extends React.Component<any, any> {
+class CopyNewComponent extends React.Component <any, any> {
   subscription: any;
   constructor(props: any) {
     super(props);

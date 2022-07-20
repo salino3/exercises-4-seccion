@@ -1,6 +1,6 @@
 import {Fragment} from 'react';
 // npm install rxjs
-import { from } from "rxjs";
+import { from, range } from "rxjs";
 
 /* 
 of = toma argumentos y genera una secuencias y observables;
@@ -19,6 +19,7 @@ const source1$ = from([1, 2, 3, 4, 5]);
 
 source1$.subscribe(observer);
 
+//
 const source$ = from(fetch("https://api.github.com/users/klerith"));
 
 source$.subscribe(async (resp: any) => {
@@ -46,7 +47,6 @@ for (let id of miIterable) {
 from(miIterable).subscribe(observer);
 
 const PrimerFile = () => {
-
 
   return (
     <Fragment>
